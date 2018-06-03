@@ -19,8 +19,9 @@ class PageDisplay {
         }
 
         // Sidebar page nav click event
+        const self = this;
         $('.sidebar-page-nav').on('click', 'a', event => {
-            goToText(event.target.getAttribute('href').substr(1));
+            self.goToText(event.target.getAttribute('href').substr(1));
         });
     }
 
